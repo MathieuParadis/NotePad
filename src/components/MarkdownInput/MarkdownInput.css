@@ -1,0 +1,21 @@
+.display {
+  min-height: 45vh;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.input-div {
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.input {
+  background-color: #4B4B4B;
+  border-width:0px;
+  border:none;
+  color: white;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
