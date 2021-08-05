@@ -15,15 +15,21 @@ const MarkdownInput = () => {
     setText(event.target.value);
   };
 
+  const handleSave = () => {
+    title.length > 0 ? console.log(title) : alert('no title')
+    localStorage.setItem(title, text);
+    console.log(localStorage.getItem(title));
+  };
+
   return (
-    <div class="d-flex flex-column">
-      <div class="display">
+    <div className="d-flex flex-column">
+      <div className="display">
         <NoteDisplay title={title} text={text}/>
       </div>
-      <div class="input-div d-flex flex-column">
-        <input class="input mb-4 py-2" value={title} onChange={onTitleChange} />
-        <textarea class="input mb-4 py-2" rows="10" value={text} onChange={onTextChange} ></textarea>
-        <Button action='Save'/>
+      <div className="input-div d-flex flex-column">
+        <input className="input mb-4 py-2" value={title} onChange={onTitleChange} />
+        <textarea className="input mb-4 py-2" rows="10" value={text} onChange={onTextChange} ></textarea>
+        <Button action='Save' onClick={handleSave}/>
       </div>
     </div>
   );

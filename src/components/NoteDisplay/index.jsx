@@ -1,11 +1,12 @@
 import React from 'react';
+import Markdown from 'components/Markdown';
 import './NoteDisplay.css'
 
 const NoteDisplay = (props) => {
   return (
     <>
-      <h1 class="display-title">{props.title}</h1>
-      <p>{props.text}</p>
+      <h1 className="display-title">{props.title}</h1>
+      <div className="display-text"><Markdown input={props.text}/></div>
     </>
   );
 }

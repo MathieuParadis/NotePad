@@ -8,11 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => (
-  <div class="App d-flex">
-    <div class="Navbar col-3">
+  <div className="App d-flex">
+    <div className="Navbar col-3">
       <Button action='New note'/>
     </div>
-    <div class="Note col-9">
+    <div className="Note col-9">
       <MarkdownInput/>
     </div>
   </div>

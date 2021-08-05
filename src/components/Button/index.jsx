@@ -1,9 +1,9 @@
 import React from 'react';
 import './Button.css'
 
-const NoteDisplay = ({action}) => {
+const NoteDisplay = (props) => {
   return (
-    <button class="button" type="button">{action}</button>
+    <button className="button" type="button" onClick={props.onClick}>{props.action}</button>
   );
 }
 

@@ -3,6 +3,7 @@
   border-width:0px;
   border:none;
   color: white;
-  height: 2.3em;
+  min-height: 2.3em;
   width: 15em;
+  max-width: 100%
 }
