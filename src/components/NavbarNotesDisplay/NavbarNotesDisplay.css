@@ -1,0 +1,14 @@
+.notes {
+  max-width: 100%;
+}
+
+.SingleNote {
+  border: solid white;
+  width: 15em;
+  max-width: 100%;;
+  text-align: left;
+  margin-top: 0.8em;
+  margin-bottom: 1.5em ;
+  word-wrap: break-word;
+}
+
